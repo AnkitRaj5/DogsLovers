@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding:0px;
+}
+.main-head{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+.head h1{
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin: 14px 0;
+}
+.selection p{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.head-container{
+    padding-bottom: 5rem;
+    background: url(/image/dogwalk.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+.content-display{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.dog-breeds{
+    cursor: pointer;
+}
+.main .img-show{
+    width: 50%;
+    min-width:350px;
+    text-align: center;
+    margin:0 auto;
+
+}
+.img-show img{
+    width:100%;
+    min-width: 350px;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+.last button{
+    text-decoration: none;
+    font-size: 1.5rem;
+    border:none;
+    padding:14px 25px;
+    color:grey;
+    background-color: greenyellow;
+    border-radius:5px;
+    cursor:pointer;
+}
+.download{
+    margin-right: 4%;
+}
+.last{
+    display: flex;
+    margin-top:3rem;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 5%;
+}
+.dog-breed .dog-breeds{
+    padding:8px 16px;
+    border: 3px solid black;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.dog-breed .dog-breeds option{
+    margin: 5px 0;
+    
+}
+/* scrollbar design not understand just copy and paste it's works */
+    ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+.dog-breed-img{
+    display: none;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  @keyframes spin{
+      to{
+          transform: rotateZ(360deg);
+      }
+  }
+  .spinner{
+      text-align: center;
+      animation: 1.5s spin linear infinite;
+      display: none;
+      border-radius: 50% !important;
+      width: 100% !important;
+  }
+
+  .show{
+      display: block !important;
+  }
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .head h1{
+        padding:0px 1rem;
+        font-size: 3.3rem;
+    }
+    .main-head{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 14px;
+    }
+    .head-container{
+        padding-bottom: 30px;
+       
+    }
+    .last{
+        display: block;
+        margin-top: 3rem;
+        text-align: center;
+        padding-bottom:5rem;
+    }
+    .download{
+        margin-bottom: 2rem;
+    }
+    .selection p{
+        padding-right: 0.2rem;
+    }
+}
